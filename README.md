@@ -6,10 +6,12 @@ These instructions will get you a copy of the project up and running on your loc
 This project has requirements file. You are required to install all requirements before starting this project.
 To install all requirements use following command in a python 2.7 supported virtual environment.
 pip install -r requirements.txt
-Go in to the repository
+Go in to the repository:
 cd rest/
+Now migrate the database with following command:
+./manage.py migrate
 
-This API uses authentication so first create a superuser.
+This API uses authentication so first create a superuser with following command:
 django-admin createsuperuser
 
 Now, start a development server by typing
